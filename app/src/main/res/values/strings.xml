@@ -3,4 +3,5 @@
     <string name="select_language">Select Language</string>
     <string name="english">English</string>
     <string name="hindi">Hindi</string>
+    <string name="error_text_blank">This field cannot be left blank</string>
 </resources>
