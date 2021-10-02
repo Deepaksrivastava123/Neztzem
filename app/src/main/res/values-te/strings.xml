@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Neztzem</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="marathi">Marathi</string>
+    <string name="gujrati">Gujrati</string>
+    <string name="tamil">Tamil</string>
+    <string name="telgu">Telgu</string>
+    <string name="punjabi">Punjabi</string>
+
+    <string name="error_text_blank">ఈ ఫీల్డ్‌ను ఖాళీగా ఉంచడం సాధ్యం కాదు</string>
+    <string name="register_new_user">కొత్త వినియోగదారుని నమోదు చేయండి</string>
+    <string name="first_name">మొదటి పేరు</string>
+    <string name="last_name">చివరి పేరు</string>
+    <string name="mobile_number">
+మొబైల్ నంబర్</string>
+    <string name="adhaar_number">
+ఆధార్ సంఖ్య</string>
+    <string name="pan_number">పాన్ నంబర్</string>
+    <string name="enter_mobile_number">మొబైల్ నంబర్‌ను నమోదు చేయండి (+91 లేకుండా)</string>
+    <string name="enter_adhaar_number">ఆధార్ నంబర్ నమోదు చేయండి</string>
+    <string name="enter_pan_number">పాన్ నంబర్ నమోదు చేయండి</string>
+    <string name="email">ఇమెయిల్</string>
+    <string name="password">పాస్వర్డ్</string>
+    <string name="login_with_otp">OTP తో లాగిన్ అవ్వండి</string>
+    <string name="register">నమోదు</string>
+    <string name="new_user">కొత్త వినియోగదారు? కొత్త ఖాతాను సృష్టించండి</string>
+    <string name="otp_sent_message">మీ నంబర్‌కు OTP పంపబడింది. దయచేసి నమోదు చెయ్యండి</string>
+    <string name="otp">OTP నమోదు చేయండి</string>
+    <string name="submit">సమర్పించండి</string>
+</resources>

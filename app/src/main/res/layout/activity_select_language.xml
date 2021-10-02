@@ -16,7 +16,7 @@
         android:gravity="center"
         android:padding="10dp"
         android:textStyle="bold"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="50dp"/>
 
     <Button
         android:id="@+id/button_english"
@@ -37,6 +37,66 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="@string/hindi"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/button_marathi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/marathi"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/button_gujrati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/gujrati"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/button_tamil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/tamil"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/button_telgu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/telgu"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"/>
+    <Button
+        android:id="@+id/button_punjabi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/punjabi"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="18sp"

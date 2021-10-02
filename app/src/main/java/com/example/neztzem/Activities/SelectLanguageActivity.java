@@ -1,12 +1,21 @@
 package com.example.neztzem.Activities;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.neztzem.Constants.Constants;
 import com.example.neztzem.R;
+import com.example.neztzem.Utils.SharedPrefUtils;
+
+import java.util.Locale;
 
 public class SelectLanguageActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,18 +30,70 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
     private void handleClicks() {
         findViewById(R.id.button_english).setOnClickListener(this);
         findViewById(R.id.button_hindi).setOnClickListener(this);
+        findViewById(R.id.button_marathi).setOnClickListener(this);
+        findViewById(R.id.button_gujrati).setOnClickListener(this);
+        findViewById(R.id.button_tamil).setOnClickListener(this);
+        findViewById(R.id.button_telgu).setOnClickListener(this);
+        findViewById(R.id.button_punjabi).setOnClickListener(this);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
+    public void setLanguage(Activity activity, String language){
+        Locale locale = new Locale(language);
+        Resources resources = activity.getResources();
+        Configuration configuration = resources.getConfiguration();
+        configuration.setLocale(locale);
+        resources.updateConfiguration(configuration,resources.getDisplayMetrics());
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     @Override
     public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.button_english:{
+              setLanguage(this,"en");
+              startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
+              finish();
+              break;
+            }
+            case R.id.button_hindi:{
+                setLanguage(this,"hi");
+                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
+                finish();
+                break;
 
-     if (v.getId() == R.id.button_english){
+            }
+            case R.id.button_gujrati:{
+                setLanguage(this,"gu");
+                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
+                finish();
+                break;
+            }
+            case R.id.button_marathi:{
+                setLanguage(this,"ma");
+                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
+                finish();
+                break;
+            }
+            case R.id.button_punjabi:{
+                setLanguage(this,"pu");
+                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
+                finish();
+                break;
+            }
+            case R.id.button_tamil:{
 
-     }
-     else {
+                setLanguage(this,"ta");
+                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
+                finish();
+                break;
+            } case R.id.button_telgu:{
+                setLanguage(this,"te");
+                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
+                finish();
+                break;
+            }
 
-     }
-       startActivity(new Intent(SelectLanguageActivity.this,RegisterActivity.class));
-       finish();
+        }
     }
 }
