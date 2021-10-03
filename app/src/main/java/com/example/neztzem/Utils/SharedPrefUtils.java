@@ -33,6 +33,16 @@ public class SharedPrefUtils {
         return preferences.getString(key, defaultValue);
     }
 
+    public void putBoolean(String key, Boolean value) {
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean(key, value);
+        editor.apply();
+    }
+
+    public Boolean getBoolean(String key, Boolean defaultValue) {
+        return preferences.getBoolean(key, defaultValue);
+    }
+
     public void resetAll() {
         preferences.edit().clear().apply();
     }

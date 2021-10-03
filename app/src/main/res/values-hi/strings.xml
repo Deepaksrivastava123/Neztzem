@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Neztzem</string>
+    <string name="app_name">Nextzem</string>
     <string name="select_language">Select Language</string>
     <string name="english">English</string>
     <string name="hindi">Hindi</string>
@@ -28,5 +28,8 @@
     <string name="otp_sent_message">आपके नंबर पर ओटीपी भेजा गया। कृपया दर्ज करें।</string>
     <string name="otp">ओटीपी दर्ज करें</string>
     <string name="submit">प्रस्तुत करना</string>
+    <string name="error_valid_mobile_number">Please enter a valid mobile number</string>
+    <string name="error">Error</string>
+    <string name="not_register">You are not register with us.Please Register.</string>
 
 </resources>

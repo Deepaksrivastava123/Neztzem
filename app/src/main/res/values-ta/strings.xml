@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Neztzem</string>
+    <string name="app_name">Nextzem</string>
     <string name="select_language">Select Language</string>
     <string name="english">English</string>
     <string name="hindi">Hindi</string>
@@ -30,4 +30,7 @@ OTP உடன் உள்நுழைக</string>
     <string name="otp">
 OTP ஐ உள்ளிடவும்</string>
     <string name="submit">சமர்ப்பிக்கவும்</string>
+    <string name="error_valid_mobile_number">Please enter a valid mobile number</string>
+    <string name="error">Error</string>
+    <string name="not_register">You are not register with us.Please Register.</string>
 </resources>

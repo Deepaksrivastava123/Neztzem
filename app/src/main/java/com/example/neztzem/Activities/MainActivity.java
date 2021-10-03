@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
+import com.example.neztzem.Constants.Constants;
 import com.example.neztzem.R;
+import com.example.neztzem.Utils.SharedPrefUtils;
 
 public class MainActivity extends AppCompatActivity {
     static String TAG = "SplashActivity";
@@ -55,10 +57,11 @@ public class MainActivity extends AppCompatActivity {
     private void moveToNextActivity() {
         if (IS_ALIVE) {
             IS_ALIVE = false;
-            startActivity(new Intent(MainActivity.this,SelectLanguageActivity.class));
-            finish();
+              startActivity(new Intent(MainActivity.this,SelectLanguageActivity.class));
+              finish();
+            }
+
         }
     }
 
 
-}

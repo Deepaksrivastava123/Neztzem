@@ -1,7 +1,10 @@
 package com.example.neztzem.Activities;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -75,5 +78,19 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         localDataModel.setEmail(edit_email.getText().toString().trim());
 
         SharedPrefUtils.getInstance(this).putString(Constants.PREF_LOCAL_MODEL,new Gson().toJson(localDataModel));
+        showDialog("Register Successfully");
+    }
+
+    public void showDialog(String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(message);
+        builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+                finish();
+            }
+        });
+        builder.create().show();
     }
 }
