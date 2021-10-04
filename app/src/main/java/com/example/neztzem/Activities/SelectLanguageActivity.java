@@ -52,45 +52,80 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
         switch (v.getId()){
             case R.id.button_english:{
               setLanguage(this,"en");
-              startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
-              finish();
+              if (SharedPrefUtils.getInstance(this).getBoolean(Constants.PREF_LOGGED_IN,false)) {
+                  startActivity(new Intent(SelectLanguageActivity.this, DashboardActivity.class));
+                  finish();
+              }else {
+                  startActivity(new Intent(SelectLanguageActivity.this, LoginActivity.class));
+                  finish();
+              }
               break;
             }
             case R.id.button_hindi:{
                 setLanguage(this,"hi");
-                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
-                finish();
+                if (SharedPrefUtils.getInstance(this).getBoolean(Constants.PREF_LOGGED_IN,false)) {
+                    startActivity(new Intent(SelectLanguageActivity.this, DashboardActivity.class));
+                    finish();
+                }else {
+                    startActivity(new Intent(SelectLanguageActivity.this, LoginActivity.class));
+                    finish();
+                }
                 break;
 
             }
             case R.id.button_gujrati:{
                 setLanguage(this,"gu");
-                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
-                finish();
+                if (SharedPrefUtils.getInstance(this).getBoolean(Constants.PREF_LOGGED_IN,false)) {
+                    startActivity(new Intent(SelectLanguageActivity.this, DashboardActivity.class));
+                    finish();
+                }else {
+                    startActivity(new Intent(SelectLanguageActivity.this, LoginActivity.class));
+                    finish();
+                }
                 break;
             }
             case R.id.button_marathi:{
                 setLanguage(this,"ma");
-                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
-                finish();
+                if (SharedPrefUtils.getInstance(this).getBoolean(Constants.PREF_LOGGED_IN,false)) {
+                    startActivity(new Intent(SelectLanguageActivity.this, DashboardActivity.class));
+                    finish();
+                }else {
+                    startActivity(new Intent(SelectLanguageActivity.this, LoginActivity.class));
+                    finish();
+                }
                 break;
             }
             case R.id.button_punjabi:{
                 setLanguage(this,"pu");
-                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
-                finish();
+                if (SharedPrefUtils.getInstance(this).getBoolean(Constants.PREF_LOGGED_IN,false)) {
+                    startActivity(new Intent(SelectLanguageActivity.this, DashboardActivity.class));
+                    finish();
+                }else {
+                    startActivity(new Intent(SelectLanguageActivity.this, LoginActivity.class));
+                    finish();
+                }
                 break;
             }
             case R.id.button_tamil:{
 
                 setLanguage(this,"ta");
-                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
-                finish();
+                if (SharedPrefUtils.getInstance(this).getBoolean(Constants.PREF_LOGGED_IN,false)) {
+                    startActivity(new Intent(SelectLanguageActivity.this, DashboardActivity.class));
+                    finish();
+                }else {
+                    startActivity(new Intent(SelectLanguageActivity.this, LoginActivity.class));
+                    finish();
+                }
                 break;
             } case R.id.button_telgu:{
                 setLanguage(this,"te");
-                startActivity(new Intent(SelectLanguageActivity.this,LoginActivity.class));
-                finish();
+                if (SharedPrefUtils.getInstance(this).getBoolean(Constants.PREF_LOGGED_IN,false)) {
+                    startActivity(new Intent(SelectLanguageActivity.this, DashboardActivity.class));
+                    finish();
+                }else {
+                    startActivity(new Intent(SelectLanguageActivity.this, LoginActivity.class));
+                    finish();
+                }
                 break;
             }
 
