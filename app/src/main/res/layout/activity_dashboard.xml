@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Activities.DashboardActivity">
 
     <TextView
@@ -15,5 +16,15 @@
         android:textStyle="bold"
         android:gravity="center_horizontal"
         android:layout_marginTop="150dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
         android:textSize="20sp"/>
 </LinearLayout>
