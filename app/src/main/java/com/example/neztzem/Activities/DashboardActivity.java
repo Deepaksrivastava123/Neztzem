@@ -39,6 +39,7 @@ public class DashboardActivity extends AppCompatActivity implements PaymentResul
         initView();
         handleClick();
         setdata();
+
     }
 
     private void initView() {
@@ -71,7 +72,8 @@ public class DashboardActivity extends AppCompatActivity implements PaymentResul
     }
 
     private void initiateTransaction() {
-
+        String tempString = SharedPrefUtils.getInstance(this).getString(Constants.PREF_LOCAL_MODEL, "");
+        LocalDataModel localDataModel = new Gson().fromJson(tempString, LocalDataModel.class);
         //Initialize razorpay checkout
         Checkout checkout = new Checkout();
 
@@ -102,10 +104,10 @@ public class DashboardActivity extends AppCompatActivity implements PaymentResul
             object.put("amount", sAmount);
 
             //Putmobile number
-            object.put("prefill.contact", "8318919787");
+            object.put("prefill.contact", localDataModel.getMobileNumber());
 
             //Putemail
-            object.put("prefill.email", "tarunshrm768@gmail.com");
+            object.put("prefill.email", localDataModel.getMobileNumber());
 
             //open razorpay checkout
             checkout.open(DashboardActivity.this,object);
