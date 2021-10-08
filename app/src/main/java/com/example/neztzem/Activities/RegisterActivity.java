@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
@@ -20,16 +21,34 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private EditText edit_mobile, edit_first_name, edit_last_name, edit_email,edit_adhaar,edit_pan;
     private View progress;
+    private String data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-
+        getDataWithIntent();
         initView();
         handleClicks();
+        hideViews();
 
+    }
+
+    private void hideViews() {
+        if (data.equalsIgnoreCase("As Teen")){
+            edit_pan.setVisibility(View.GONE);
+        }
+        else {
+            edit_pan.setVisibility(View.VISIBLE);
+        }
+    }
+
+    private void getDataWithIntent() {
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            data = extras.getString("data");
+        }
     }
 
     private void initView() {
@@ -58,7 +77,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 !ValidationUtils.blankValidation(edit_last_name) ||
                 !ValidationUtils.blankValidation(edit_mobile) ||
                  !ValidationUtils.blankValidation(edit_adhaar) ||
-                  !ValidationUtils.blankValidation(edit_pan) ||
                    !ValidationUtils.blankValidation(edit_email)) {
 
             return;
@@ -74,7 +92,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         localDataModel.setLastName(edit_last_name.getText().toString().trim());
         localDataModel.setMobileNumber(edit_mobile.getText().toString().trim());
         localDataModel.setAdhaarNumber(edit_adhaar.getText().toString().trim());
-        localDataModel.setPanNumber(edit_pan.getText().toString().trim());
+        if (edit_pan!=null) {
+            localDataModel.setPanNumber(edit_pan.getText().toString().trim());
+        }
         localDataModel.setEmail(edit_email.getText().toString().trim());
 
         SharedPrefUtils.getInstance(this).putString(Constants.PREF_LOCAL_MODEL,new Gson().toJson(localDataModel));
