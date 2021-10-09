@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,7 +26,7 @@ import org.json.JSONObject;
 public class DashboardActivity extends AppCompatActivity implements PaymentResultListener {
 
     TextView text_username,text_logout;
-    Button btPay;
+    LinearLayout btPay;
     String sAmount;
 
     @Override

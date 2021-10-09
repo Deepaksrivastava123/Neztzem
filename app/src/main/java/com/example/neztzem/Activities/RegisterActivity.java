@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.neztzem.Constants.Constants;
 import com.example.neztzem.Model.LocalDataModel.LocalDataModel;
@@ -21,6 +22,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private EditText edit_mobile, edit_first_name, edit_last_name, edit_email,edit_adhaar,edit_pan;
     private View progress;
+    private TextView text_pan;
     private String data;
 
     @Override
@@ -38,9 +40,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private void hideViews() {
         if (data.equalsIgnoreCase("As Teen")){
             edit_pan.setVisibility(View.GONE);
+            text_pan.setVisibility(View.GONE);
         }
         else {
             edit_pan.setVisibility(View.VISIBLE);
+            text_pan.setVisibility(View.VISIBLE);
         }
     }
 
@@ -58,6 +62,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         edit_email = findViewById(R.id.edit_email);
         edit_adhaar = findViewById(R.id.edit_adhaar_number);
         edit_pan = findViewById(R.id.edit_pan_number);
+        text_pan = findViewById(R.id.text_pan);
         progress = findViewById(R.id.progress);
     }
     private void handleClicks(){

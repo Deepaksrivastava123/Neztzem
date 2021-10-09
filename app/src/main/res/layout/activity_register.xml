@@ -113,6 +113,7 @@
                 android:background="@drawable/bg_edittext_white"
                 android:inputType="number"/>
             <TextView
+                android:id="@+id/text_pan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
