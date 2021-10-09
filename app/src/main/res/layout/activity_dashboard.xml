@@ -4,8 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightpink"
     android:orientation="vertical"
     tools:context=".Activities.DashboardActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightpink"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile"
+                android:layout_margin="8dp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="NextZem"
+            android:textColor="@color/black"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/notification_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/notification" />
+
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,7 +67,7 @@
             android:id="@+id/text_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="dfdhfdfj"
+            android:text="user"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginStart="5dp"
@@ -38,5 +90,308 @@
     </RelativeLayout>
 
 
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:background="@drawable/banner"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/linear_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/upi"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:text="UPI"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_piggi_bank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/scan"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="Scan/Pay"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_M_wallet"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/finance"
+                        android:layout_alignParentTop="true"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textSize="12dp"
+                        android:text="Finance Assistance"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/linear_money2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/bank"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:text="Account Detail"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_piggi_bank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/deposit"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="Piggi Bank"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_M_wallet"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/mwallet"
+                        android:layout_alignParentTop="true"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="M-Wallet"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/linear_money2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/money"
+                        android:layout_alignParentTop="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:text="Recharge"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_piggi_bank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/bill"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="Bill Payment"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_M_wallet"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/credit"
+                        android:layout_alignParentTop="true"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="12dp"
+                        android:text="Credit Account"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
