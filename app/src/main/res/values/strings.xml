@@ -29,5 +29,7 @@
     <string name="error_valid_mobile_number">Please enter a valid mobile number</string>
     <string name="error">Error</string>
     <string name="not_register">You are not register with us.Please Register.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
