@@ -135,7 +135,7 @@
                             android:layout_height="80dp"
                             android:layout_weight="1"
                             android:layout_marginTop="5dp"
-                            android:src="@drawable/aeps"
+                            android:src="@drawable/account"
                             app:civ_border_color="@color/fbbluecolor"
                             android:layout_alignParentTop="true"/>
                         <TextView
@@ -146,7 +146,7 @@
                             android:textColor="@color/black"
                             android:textStyle="bold"
                             android:textSize="13dp"
-                            android:text="AePS"/>
+                            android:text="Account Detail"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -163,7 +163,7 @@
                             android:layout_alignParentTop="true"
                             android:layout_weight="1"
                             android:layout_marginTop="5dp"
-                            android:src="@drawable/moneytransfer"
+                            android:src="@drawable/deposit"
                             app:civ_border_color="@color/fbbluecolor" />
                         <TextView
                             android:layout_width="match_parent"
@@ -174,7 +174,7 @@
                             android:textColor="@color/black"
                             android:textStyle="bold"
                             android:textSize="12dp"
-                            android:text="Money Transfer"/>
+                            android:text="Piggi Bank"/>
                     </LinearLayout>
                     <LinearLayout
                         android:id="@+id/linear_Micro_Atm"
@@ -189,7 +189,7 @@
                             android:layout_height="80dp"
                             android:layout_weight="1"
                             android:layout_marginTop="5dp"
-                            android:src="@drawable/microatm"
+                            android:src="@drawable/credit"
                             app:civ_border_color="@color/fbbluecolor"
                             android:layout_alignParentTop="true"/>
                         <TextView
@@ -200,7 +200,7 @@
                             android:textColor="@color/black"
                             android:textStyle="bold"
                             android:textSize="12dp"
-                            android:text="Micro Atm"/>
+                            android:text="Credit Wallet"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -234,18 +234,18 @@
                         android:layout_height="60dp"
                         android:layout_weight="1"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/addbalance"
+                        android:src="@drawable/assistant"
                         android:layout_alignParentTop="true"/>
 
 
                     <ImageView
                         android:id="@+id/settlement"
-                        android:layout_width="0dp"
+                        android:layout_width="50dp"
                         android:layout_height="60dp"
                         android:layout_alignParentTop="true"
                         android:layout_weight="1"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/settlement"/>
+                        android:src="@drawable/mwallet"/>
 
                     <ImageView
                         android:id="@+id/img_commision"
@@ -253,7 +253,7 @@
                         android:layout_height="60dp"
                         android:layout_weight="1"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/commission"
+                        android:src="@drawable/upi"
                         android:layout_alignParentTop="true" />
 
                     <ImageView
@@ -262,7 +262,7 @@
                         android:layout_height="60dp"
                         android:layout_weight="1"
                         android:layout_marginTop="5dp"
-                        android:src="@drawable/report"
+                        android:src="@drawable/pay"
                         android:layout_alignParentTop="true"/>
                 </LinearLayout>
                 <LinearLayout
@@ -282,7 +282,7 @@
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         android:textSize="12dp"
-                        android:text="Wallet"/>
+                        android:text="Assistant"/>
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -292,7 +292,7 @@
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         android:textSize="12dp"
-                        android:text="Settlement"/>
+                        android:text="M-Wallet"/>
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -303,7 +303,7 @@
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         android:textSize="12dp"
-                        android:text="Commission"/>
+                        android:text="UPI"/>
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -314,7 +314,7 @@
                         android:textColor="@color/black"
                         android:textStyle="bold"
                         android:textSize="12dp"
-                        android:text="Report"/>
+                        android:text="Pay Via Mobile"/>
                 </LinearLayout>
                 <!--                <LinearLayout-->
                 <!--                    android:layout_width="match_parent"-->

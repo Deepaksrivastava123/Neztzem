@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homeId"
+        android:icon="@drawable/ic_outline_home_24"
+        android:title="Home"/>
+
+    <item android:id="@+id/videoId"
+        android:icon="@drawable/ic_outline_slow_motion_video_24"
+        android:title="Videos"/>
+
+    <item android:id="@+id/coinsId"
+        android:icon="@drawable/coin"
+        android:title="Coins"/>
+
+    <item android:id="@+id/rewardsId"
+        android:icon="@drawable/money"
+        android:title="Rewards"/>
+
+    <item android:id="@+id/historyId"
+        android:icon="@drawable/history"
+        android:title="History"/>
+
+</menu>
