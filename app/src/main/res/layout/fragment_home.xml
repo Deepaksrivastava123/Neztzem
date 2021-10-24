@@ -26,9 +26,10 @@
         <!--           android:layout_marginTop="2dp"-->
         <!--           android:layout_marginBottom="2dp"/>-->
         <TextView
+            android:id="@+id/txt_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hi!"
+            android:text=""
             android:textSize="15dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="13dp"
@@ -74,7 +75,8 @@
         <ImageView
             android:id="@+id/img_Logout"
             android:layout_width="30dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_outline_logout_24"
             android:layout_marginEnd="20dp"
             android:layout_alignParentEnd="true"/>
     </RelativeLayout>
@@ -136,7 +138,6 @@
                             android:layout_weight="1"
                             android:layout_marginTop="5dp"
                             android:src="@drawable/account"
-                            app:civ_border_color="@color/fbbluecolor"
                             android:layout_alignParentTop="true"/>
                         <TextView
                             android:layout_width="match_parent"
@@ -163,8 +164,7 @@
                             android:layout_alignParentTop="true"
                             android:layout_weight="1"
                             android:layout_marginTop="5dp"
-                            android:src="@drawable/deposit"
-                            app:civ_border_color="@color/fbbluecolor" />
+                            android:src="@drawable/deposit"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -190,7 +190,6 @@
                             android:layout_weight="1"
                             android:layout_marginTop="5dp"
                             android:src="@drawable/credit"
-                            app:civ_border_color="@color/fbbluecolor"
                             android:layout_alignParentTop="true"/>
                         <TextView
                             android:layout_width="match_parent"
@@ -564,264 +563,264 @@
 
                 <!--                </LinearLayout>-->
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:layout_margin="6dp"
-                android:orientation="vertical"
-                android:background="@drawable/dsh_custo">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Recharge and Bill"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:layout_margin="10dp"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:weightSum="4"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:id="@+id/linear_Mobile_Recharge"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:orientation="vertical">
-                        <com.mikhaellopez.circularimageview.CircularImageView
-                            android:layout_width="60dp"
-                            android:layout_height="80dp"
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:src="@drawable/mobilerecharge1"
-                            app:civ_border_color="@color/orange"
-                            android:layout_alignParentTop="true" />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:padding="5dp"
-                            android:textSize="12sp"
-                            android:text="Mobile Recharge"/>
-                    </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="230dp"-->
+<!--                android:layout_margin="6dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="@drawable/dsh_custo">-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Recharge and Bill"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textSize="15sp"-->
+<!--                    android:layout_margin="10dp"/>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="0dp"-->
+<!--                    android:weightSum="4"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/linear_Mobile_Recharge"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+<!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:src="@drawable/mobilerecharge1"-->
+<!--                            app:civ_border_color="@color/orange"-->
+<!--                            android:layout_alignParentTop="true" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:padding="5dp"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:text="Mobile Recharge"/>-->
+<!--                    </LinearLayout>-->
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:id="@+id/linear_Dth"
-                        android:orientation="vertical"
-                        android:gravity="center">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/linear_Dth"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:gravity="center">-->
 
-                        <com.mikhaellopez.circularimageview.CircularImageView
-                            android:id="@+id/img_Dth"
-                            android:layout_width="60dp"
-                            android:layout_height="80dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:src="@drawable/dth"
-                            app:civ_border_color="@color/orange" />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textAlignment="center"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:textSize="12sp"
-                            android:text="DTH"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:id="@+id/liner_Postpaid"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+<!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                            android:id="@+id/img_Dth"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_alignParentTop="true"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:src="@drawable/dth"-->
+<!--                            app:civ_border_color="@color/orange" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:text="DTH"/>-->
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center"-->
+<!--                        android:id="@+id/liner_Postpaid"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
 
-                        <com.mikhaellopez.circularimageview.CircularImageView
-                            android:id="@+id/img_Postpaid"
-                            android:layout_width="60dp"
-                            android:layout_height="80dp"
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            app:civ_border_color="@color/orange"
-                            android:src="@drawable/postpaid1"
-                            android:layout_alignParentTop="true"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:textSize="12sp"
-                            android:text="Postpaid"/>
-                    </LinearLayout>
-
-
-
-                    <LinearLayout
-                        android:id="@+id/linear_Electricity"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <com.mikhaellopez.circularimageview.CircularImageView
-                            android:id="@+id/img_Electricity"
-                            android:layout_width="60dp"
-                            android:layout_height="80dp"
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:src="@drawable/electricity"
-                            app:civ_border_color="@color/orange"
-                            android:layout_alignParentTop="true" />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:textSize="12sp"
-                            android:text="Electricity"/>
-                    </LinearLayout>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:weightSum="4"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:id="@+id/linear_Water"
-                        android:orientation="vertical">
-                        <com.mikhaellopez.circularimageview.CircularImageView
-                            android:id="@+id/img_Water"
-                            android:layout_width="60dp"
-                            android:layout_height="80dp"
-
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:src="@drawable/water"
-                            app:civ_border_color="@color/orange"
-                            android:layout_alignParentTop="true" />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:textSize="12sp"
-                            android:text="Water"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:id="@+id/linear_Landline"
-                        android:orientation="vertical"
-                        android:gravity="center">
-
-                        <com.mikhaellopez.circularimageview.CircularImageView
-                            android:id="@+id/img_Landline"
-                            android:layout_width="60dp"
-                            android:layout_height="80dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:src="@drawable/landline"
-                            app:civ_border_color="@color/orange"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textAlignment="center"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:textSize="12sp"
-                            android:text="Landline"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:id="@+id/linear_gas"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <com.mikhaellopez.circularimageview.CircularImageView
-                            android:id="@+id/img_Gas"
-                            android:layout_width="60dp"
-                            android:layout_height="80dp"
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:src="@drawable/gas"
-                            app:civ_border_color="@color/orange"
-                            android:layout_alignParentTop="true"/>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAllCaps="false"
-                            android:textAlignment="center"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:textSize="12sp"
-                            android:text="Gas"/>
-                    </LinearLayout>
+<!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                            android:id="@+id/img_Postpaid"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            app:civ_border_color="@color/orange"-->
+<!--                            android:src="@drawable/postpaid1"-->
+<!--                            android:layout_alignParentTop="true"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:text="Postpaid"/>-->
+<!--                    </LinearLayout>-->
 
 
 
-                    <LinearLayout
-                        android:id="@+id/linear_Broadband"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/linear_Electricity"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
 
-                        <com.mikhaellopez.circularimageview.CircularImageView
-                            android:id="@+id/img_Broadband"
-                            android:layout_width="60dp"
-                            android:layout_height="80dp"
-                            android:layout_weight="1"
-                            android:layout_marginTop="5dp"
-                            android:src="@drawable/broadband"
-                            app:civ_border_color="@color/orange"
-                            android:layout_alignParentTop="true" />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="center"
-                            android:textAllCaps="false"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:textSize="12sp"
-                            android:text="Broadband"/>
-                    </LinearLayout>
+<!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                            android:id="@+id/img_Electricity"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:src="@drawable/electricity"-->
+<!--                            app:civ_border_color="@color/orange"-->
+<!--                            android:layout_alignParentTop="true" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:text="Electricity"/>-->
+<!--                    </LinearLayout>-->
 
-                </LinearLayout>
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="0dp"-->
+<!--                    android:weightSum="4"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center"-->
+<!--                        android:id="@+id/linear_Water"-->
+<!--                        android:orientation="vertical">-->
+<!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                            android:id="@+id/img_Water"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="80dp"-->
+
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:src="@drawable/water"-->
+<!--                            app:civ_border_color="@color/orange"-->
+<!--                            android:layout_alignParentTop="true" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:text="Water"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/linear_Landline"-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:gravity="center">-->
+
+<!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                            android:id="@+id/img_Landline"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_alignParentTop="true"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:src="@drawable/landline"-->
+<!--                            app:civ_border_color="@color/orange"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:text="Landline"/>-->
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center"-->
+<!--                        android:id="@+id/linear_gas"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                            android:id="@+id/img_Gas"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:src="@drawable/gas"-->
+<!--                            app:civ_border_color="@color/orange"-->
+<!--                            android:layout_alignParentTop="true"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:text="Gas"/>-->
+<!--                    </LinearLayout>-->
 
 
-            </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/linear_Broadband"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+<!--                            android:id="@+id/img_Broadband"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:src="@drawable/broadband"-->
+<!--                            app:civ_border_color="@color/orange"-->
+<!--                            android:layout_alignParentTop="true" />-->
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textStyle="bold"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:text="Broadband"/>-->
+<!--                    </LinearLayout>-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
         </LinearLayout>
 
 
